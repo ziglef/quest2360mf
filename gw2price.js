@@ -1,16 +1,15 @@
 // App requirements
 var gw2nodelib = require("gw2nodelibvz");
-var expressApp = require("express")();
-var http = require("http").Server(expressApp);
-var io = require("socket.io")(http);
 
 // Heroku stuff
 var port_number = process.env.PORT || 8000;
 
-io.configure(function () {
-  io.set("transports", ["xhr-polling"]);
-  io.set("polling duration", 10);
-});
+var express = require("express");
+var expressApp = express();
+var http = require("http").createServer(expressApp);
+var io = require("socket.io").listen(http);
+	
+http.listen(port_number);
 
 // Variables to hold the current values for each type of material in the trading post
 var woods;
@@ -31,7 +30,7 @@ expressApp.get("/", function(req, res){
 });
 
 // When someone connects to the server it gets the current prices
-io.on("connection", function(socket){
+io.sockets.on("connection", function(socket){
 	woodReady = false;
 	oreReady = false;
 	getMatsPrices();
@@ -180,8 +179,6 @@ function woodsOresRes(){
 		io.sockets.emit("wore", woresResults, _woreGivers, _woreTypes);
 	}
 }
-
-http.listen(port_number);
 
 // To each result multiply by 0.85 because of trading post taxes //
 // Divide each final result by 100 to get values in silver // DONE (Results are in xG yS zC //
