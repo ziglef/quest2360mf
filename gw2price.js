@@ -7,6 +7,11 @@ var io = require("socket.io")(http);
 // Heroku stuff
 var port_number = process.env.PORT || 8000;
 
+io.configure(function () {
+  io.set("transports", ["xhr-polling"]);
+  io.set("polling duration", 10);
+});
+
 // Variables to hold the current values for each type of material in the trading post
 var woods;
 var ores;
