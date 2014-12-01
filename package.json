@@ -1,7 +1,7 @@
 {
   "name": "quest2360mf",
   "version": "0.0.1",
-  "description": "Questing until 360 MF",
+  "description": "Questing until 300 MF",
   "main": "gw2price.js",
   "scripts": {
     "start": "node gw2price.js"
