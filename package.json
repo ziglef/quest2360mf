@@ -12,7 +12,8 @@
 	"gw2nodelibvz": "0.0.1"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.10.x",
+	"npm": "1.4.28"
   },
   "repository": {
     "type": "git",
