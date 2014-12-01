@@ -1,6 +1,6 @@
 {
   "name": "quest2360mf",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "Questing until 360 MF",
   "main": "gw2price.js",
   "scripts": {
