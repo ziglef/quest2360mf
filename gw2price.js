@@ -4,6 +4,9 @@ var expressApp = require("express")();
 var http = require("http").Server(expressApp);
 var io = require("socket.io")(http);
 
+// Heroku stuff
+var port_number = server.listen(process.env.PORT || 8000);
+
 // Variables to hold the current values for each type of material in the trading post
 var woods;
 var ores;
@@ -173,7 +176,7 @@ function woodsOresRes(){
 	}
 }
 
-http.listen(8000);
+http.listen(port_number);
 
 // To each result multiply by 0.85 because of trading post taxes //
 // Divide each final result by 100 to get values in silver // DONE (Results are in xG yS zC //
