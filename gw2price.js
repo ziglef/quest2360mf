@@ -6,8 +6,8 @@ var port_number = process.env.PORT || 8000;
 
 var express = require("express");
 var expressApp = express();
-var http = require("http").createServer(expressApp);
-var io = require("socket.io").listen(http);
+var http = require("http").Server(expressApp);
+var io = require("socket.io")(http);
 	
 http.listen(port_number);
 
