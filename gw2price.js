@@ -5,7 +5,7 @@ var http = require("http").Server(expressApp);
 var io = require("socket.io")(http);
 
 // Heroku stuff
-var port_number = server.listen(process.env.PORT || 8000);
+var port_number = process.env.PORT || 8000;
 
 // Variables to hold the current values for each type of material in the trading post
 var woods;
