@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>GW2 Quest to 300% Magic Find!</title>
+		<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+		<style>
+			body, html  { height: 100%; }
+			html, body, div, span, applet, object, iframe,
+			p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, font, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				outline: 0;
+				font-size: 100%;
+				vertical-align: baseline;
+				background: transparent;
+			}
+			body { line-height: 1; }
+			ol, ul { list-style: none; }
+			blockquote, q { quotes: none; }
+			blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+			:focus { outline: 0; }
+			del { text-decoration: line-through; }
+			table {border-spacing: 0; }
+
+			/*------------------------------------------------------------------ */
+
+			/*This is not important*/
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+				background: url(background.jpg);
+				margin:0 auto;
+				width:720px;
+			}
+			a:link {
+				color: #666;
+				font-weight: bold;
+				text-decoration:none;
+			}
+			a:visited {
+				color: #666;
+				font-weight:bold;
+				text-decoration:none;
+			}
+			a:active,
+			a:hover {
+				color: #bd5a35;
+				text-decoration:underline;
+			}
+
+
+			/*
+			Table Style - This is what you want
+			------------------------------------------------------------------ */
+			table a:link {
+				color: #666;
+				font-weight: bold;
+				text-decoration:none;
+			}
+			table a:visited {
+				color: #999999;
+				font-weight:bold;
+				text-decoration:none;
+			}
+			table a:active,
+			table a:hover {
+				color: #bd5a35;
+				text-decoration:underline;
+			}
+			table {
+				width: 678px;
+				font-family:Arial, Helvetica, sans-serif;
+				color:#666;
+				font-size:12px;
+				text-shadow: 1px 1px 0px #fff;
+				background:#eaebec;
+				margin:20px;
+				border:#ccc 1px solid;
+
+				-moz-border-radius:3px;
+				-webkit-border-radius:3px;
+				border-radius:3px;
+
+				-moz-box-shadow: 0 1px 2px #d1d1d1;
+				-webkit-box-shadow: 0 1px 2px #d1d1d1;
+				box-shadow: 0 1px 2px #d1d1d1;
+			}
+			table th {
+				padding:21px 25px 22px 25px;
+				border-top:1px solid #fafafa;
+				border-bottom:1px solid #e0e0e0;
+
+				background: #ededed;
+				background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+				background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+			}
+			table th:first-child{
+				text-align: left;
+				padding-left:20px;
+			}
+			table tr:first-child th:first-child{
+				width: 30px;
+				-moz-border-radius-topleft:3px;
+				-webkit-border-top-left-radius:3px;
+				border-top-left-radius:3px;
+			}
+			table tr:first-child th:last-child{
+				-moz-border-radius-topright:3px;
+				-webkit-border-top-right-radius:3px;
+				border-top-right-radius:3px;
+			}
+			table tr{
+				padding-left:20px;
+			}
+			table tr td:first-child{
+				text-align: left;
+				padding-left:20px;
+				border-left: 0;
+			}
+			table tr td {
+				text-align: center;
+				padding:18px;
+				border-top: 1px solid #ffffff;
+				border-bottom:1px solid #e0e0e0;
+				border-left: 1px solid #e0e0e0;
+				
+				background: #fafafa;
+				background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+				background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+			}
+			table tr.even td{
+				background: #f6f6f6;
+				background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+				background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+			}
+			table tr:last-child td{
+				border-bottom:0;
+			}
+			table tr:last-child td:first-child{
+				-moz-border-radius-bottomleft:3px;
+				-webkit-border-bottom-left-radius:3px;
+				border-bottom-left-radius:3px;
+			}
+			table tr:last-child td:last-child{
+				-moz-border-radius-bottomright:3px;
+				-webkit-border-bottom-right-radius:3px;
+				border-bottom-right-radius:3px;
+			}
+			table tr:hover td{
+				background: #f2f2f2;
+				background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+				background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+			}
+		</style>
+	</head>
+
+	<body>
+		<table cellspacing='0'>
+			<tr>
+				<th>Item Level</th>
+				<th>Longbow / Shortbow / Staff / Trident</th>
+				<th>Scepter / Torch</th>
+				<th>Focus</th>
+			</tr>
+			
+			<tr id="w0"><td>1-20</td></tr>
+			<tr id="w1"><td>16-33</td></tr>
+			<tr id="w2"><td>31-48</td></tr>			
+			<tr id="w3"><td>46-63</td></tr>
+			<tr id="w4"><td>64-80</td></tr>
+		</table>
+			
+		<table cellspacing='0'>
+			<tr>
+				<th>Item Level</th>
+				<th>Hammer / Harpoon Gun / Spear</th>
+				<th>Axe / Mace / Pistol / Rifle</th>
+				<th>Shield</th>
+			</tr>
+			
+			<tr id="wo0"><td>1-23</td></tr>
+			<tr id="wo1"><td>24-33</td></tr>
+			<tr id="wo2"><td>33-48</td></tr>
+			<tr id="wo3"><td>49-63</td></tr>
+			<tr id="wo4"><td>63-80</td></tr>
+		</table>
+		
+		<table cellspacing='0'>
+			<tr>
+				<th>Item Level</th>
+				<th>Greatsword</th>
+				<th>Sword / Dagger / Warhorn</th>
+				<th>Heavy Coat</th>
+				<th>Heavy Non-Coat</th>
+			</tr>
+			
+			<tr id="o0"><td>1-23</td></tr>
+			<tr id="o1"><td>19-55</td></tr>
+			<tr id="o2"><td>49-62</td></tr>
+			<tr id="o3"><td>63-80</td></tr>
+		</table>
+		
+		<table cellspacing='0'>
+			<tr>
+				<th>Item Level</th>
+				<th>Medium Coat</th>
+				<th>Medium Non-Coat</th>
+			</tr>
+			
+			<tr id="l0"><td>1-18</td></tr>
+			<tr id="l1"><td>16-33</td></tr>
+			<tr id="l2"><td>31-50</td></tr>
+			<tr id="l3"><td>46-63</td></tr>
+			<tr id="l4"><td>61-80</td></tr>
+		</table>
+		
+		<table cellspacing='0'>
+			<tr>
+				<th>Item Level</th>
+				<th>Light Coat</th>
+				<th>Light Non-Coat</th>
+			</tr>
+			
+			<tr id="s0"><td>1-18</td></tr>
+			<tr id="s1"><td>16-33</td></tr>
+			<tr id="s2"><td>31-50</td></tr>
+			<tr id="s3"><td>46-63</td></tr>
+			<tr id="s4"><td>61-80</td></tr>
+		</table>
+	</body>
+	
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+		var socket = io();
+		var copper = "<img src=\"http://wiki.guildwars2.com/images/e/eb/Copper_coin.png\"/>";
+		var silver = "<img src=\"http://wiki.guildwars2.com/images/3/3c/Silver_coin.png\"/>";
+		var gold = "<img src=\"http://wiki.guildwars2.com/images/d/d1/Gold_coin.png\"/>";
+	
+		socket.on("wood", function(values, _woodGivers, _woodTypes){		
+			for(var i=0; i<_woodTypes; i++){
+				$("#w"+i+" td:not(:first-child)").remove();
+				for(var j=0; j<_woodGivers; j++){
+					$("#w"+i).append($("<td>").text(values[i*_woodGivers+j][0]).append($(gold)).append(" "+values[i*_woodGivers+j][1]).append($(silver)).append(" "+values[i*_woodGivers+j][2]).append($(copper)));
+				}
+			}
+		});
+		
+		socket.on("ore", function(values, _oreGivers, _oreTypes){		
+			for(var i=0; i<_oreTypes; i++){
+				$("#o"+i+" td:not(:first-child)").remove();
+				for(var j=0; j<_oreGivers; j++){
+					$("#o"+i).append($("<td>").text(values[i*_oreGivers+j][0]).append($(gold)).append(" "+values[i*_oreGivers+j][1]).append($(silver)).append(" "+values[i*_oreGivers+j][2]).append($(copper)));
+				}
+			}
+		});
+		
+		socket.on("leather", function(values, _leatherGivers, _leatherTypes){		
+			for(var i=0; i<_leatherTypes; i++){
+				$("#l"+i+" td:not(:first-child)").remove();
+				for(var j=0; j<_leatherGivers; j++){
+					$("#l"+i).append($("<td>").text(values[i*_leatherGivers+j][0]).append($(gold)).append(" "+values[i*_leatherGivers+j][1]).append($(silver)).append(" "+values[i*_leatherGivers+j][2]).append($(copper)));
+				}
+			}
+		});
+		
+		socket.on("scrap", function(values, _scrapGivers, _scrapTypes){		
+			for(var i=0; i<_scrapTypes; i++){
+				$("#s"+i+" td:not(:first-child)").remove();
+				for(var j=0; j<_scrapGivers; j++){
+					$("#s"+i).append($("<td>").text(values[i*_scrapGivers+j][0]).append($(gold)).append(" "+values[i*_scrapGivers+j][1]).append($(silver)).append(" "+values[i*_scrapGivers+j][2]).append($(copper)));
+				}
+			}
+		});
+		
+		socket.on("wore", function(values, _woreGivers, _woreTypes){
+			for(var i=0; i<_woreTypes; i++){
+				$("#wo"+i+" td:not(:first-child)").remove();
+				for(var j=0; j<_woreGivers; j++){
+					$("#wo"+i).append($("<td>").text(values[i*_woreGivers+j][0]).append($(gold)).append(" "+values[i*_woreGivers+j][1]).append($(silver)).append(" "+values[i*_woreGivers+j][2]).append($(copper)));
+				}
+			}		
+		});
+	</script>
+</html>

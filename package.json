@@ -1,0 +1,33 @@
+{
+  "name": "quest2360mf",
+  "version": "0.1",
+  "description": "Questing until 360 MF",
+  "main": "gw2price.js",
+  "scripts": {
+    "start": "node gw2price.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+	"socket.io": "1.2.0",
+	"gw2nodelibvz": "0.0.1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ziglef/quest2360mf"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+	"socket.io",
+	"gw2",
+	"guild wars"
+  ],
+  "licenses": [{
+      "type": "MIT",
+      "url": "https://github.com/ziglef/GW2NodeLib/blob/master/LICENSE"
+    }]
+}
