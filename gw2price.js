@@ -7,11 +7,6 @@ var io = require("socket.io").listen(http);
 
 // Heroku stuff
 var port_number = process.env.PORT || 8000;
-
-io.configure(function () {
-  io.set("transports", ["xhr-polling"]);
-  io.set("polling duration", 10);
-});
 	
 http.listen(port_number);
 
